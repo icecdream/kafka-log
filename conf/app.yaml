@@ -1,0 +1,10 @@
+kafka:
+  log-path-prefix: /home/server/logs/
+  groupId: "kafka-log-online"
+  brokers:
+    - 172.29.147.218:9092
+  topic-services:
+    server-a: 
+      filter-log:
+        - notneed.log
+    server-b:
