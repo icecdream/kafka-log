@@ -44,6 +44,7 @@ int main(int argc, char **argv)
         sleep(1);
     }
 
+    // join all threads
     for (auto & thread : writelog_threads) {
         thread.join();
     }
